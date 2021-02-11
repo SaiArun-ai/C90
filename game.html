@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Guess The Word</title>
+	<title>Ultimate Math Quiz</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -13,18 +13,32 @@
 <script src="game.js"></script>
 </head>
 <body>
-    <div class = "container">
+    <div class = "container" id = "Vis">
+        <h2>Math Away!!</h2>
+        <div class  = "output" class = "col-lg-6">
+            <h2 class = "txt txt-success">Select Your Grade!<b> Select a grade between 1 and 5</b></h2>
+            <input placeholder="Grade" type = "number" id = "Grade"></input>
+            <h2 id = "Error"></h2>
+        </div>
+        <button id = "Sai" onclick="GetGrade()">Submit</button>
+    </div>
+    <div class = "container" style="display:none" id = "Invis">
         <center>
-            <h2 style="color: white;">Guess The Word</h2>
+            <h2 style="color: white;">Do The Math!</h2>
             <h3 id = "pq"></h3>
             <h3 id = "pa"></h3>
-            <div id  = "output" class = "col-lg-6"></div>
+            <div class  = "output" class = "col-lg-6"></div>
             <br>
             <br>
-            <label>Send Your Word<b style = "color: royalblue;">   Put a word that has more than four letters</b>
+            <label>No 1<b style = "color: royalblue;"></b>
             </label>
             <br>
-            <input id = "SentWord" class = "txt txt-success"></input>
+            <input id = "SentN1" class = "txt txt-success"></input>
+            <br>
+            <label>No 2<b style = "color: royalblue;"></b>
+            </label>
+            <br>
+            <input id = "SentN2" class = "txt txt-success"></input>
             <button id = "sender" onclick="SendWord()" style = "background-color: salmon;">Send</button>
         </center>
     </div>
