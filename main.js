@@ -1,5 +1,5 @@
-p1n ;
-p2n ;
+var p1n ;
+var p2n ;
 function LogIn(){
     p1n = document.getElementById("player1N").value;
     p2n = document.getElementById("player2N").value;
